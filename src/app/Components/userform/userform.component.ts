@@ -26,6 +26,15 @@ users: User[] = [];
       }
     )
   }
+
+  deleteRow(user, index) {
+    const observable = this.userService.deleteUser(user);
+    observable.subscribe((response:any) => {
+      console.log(response);
+      this.users.splice(index,1)
+    })
+  }
+
   constructor(public userService: UserService) { }
   ngOnInit(): void {
     const promise = this.userService.getUsers();
@@ -35,5 +44,8 @@ users: User[] = [];
       
     })
   }
+
+
+
 
 }

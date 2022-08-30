@@ -19,6 +19,13 @@
       "age": 40,
       "Gender": "Male",
       "id": 3
+    },
+    {
+      "firstname": "Peter",
+      "lastname": "SOn",
+      "age": 70,
+      "Gender": "Male",
+      "id": 4
     }
   ]
 }

@@ -8,7 +8,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { UserformComponent } from './components/userform/userform.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AboutComponent } from './components/about/about.component';
-import { PipedemoComponent } from './components/pipedemo/pipedemo.component'
+import { PipedemoComponent } from './components/pipedemo/pipedemo.component';
+import { EllipsisPipe } from './ellipsis.pipe'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PipedemoComponent } from './components/pipedemo/pipedemo.component'
     NavbarComponent,
     UserformComponent,
     AboutComponent,
-    PipedemoComponent
+    PipedemoComponent,
+    EllipsisPipe
   ],
   imports: [
     BrowserModule,

@@ -6,13 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { UserformComponent } from './components/userform/userform.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { AboutComponent } from './components/about/about.component';
+import { PipedemoComponent } from './components/pipedemo/pipedemo.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    UserformComponent
+    UserformComponent,
+    AboutComponent,
+    PipedemoComponent
   ],
   imports: [
     BrowserModule,
